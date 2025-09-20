@@ -24,7 +24,10 @@ The assignment had three key steps:
 
 The **Classification Tree** was built as an initial exploration of the data. This simple model illustrated how categorical and numeric predictors can be split recursively to classify whether a newborn’s birth weight is low (< 2.5 kg).  
 
-![Figure 1 — Classification Tree](rf-DB1.png)
+
+![Figure 1 — Classification Tree](R1.png)
+
+
 
 > *Observation:* Even at this early stage, the tree began splitting on **maternal weight** and **prior premature labor**, reinforcing the intuition that these are critical risk factors for birth outcomes.
 
@@ -45,7 +48,9 @@ The **Decision Tree** was trained to predict low birth weight outcomes (`low`).
 ### Interpretation:
 The Decision Tree clearly highlighted **prior premature labor** and **maternal weight** as the strongest predictors of low birth weight. While interpretable, the single tree structure risks **overfitting** and had only moderate predictive power.  
 
-![Figure 2 — Decision Tree Model](rf-DB2.png)
+![Figure 2 — Decision Tree Model](R2.png)
+
+
 
 ---
 
@@ -66,7 +71,7 @@ The **Random Forest** algorithm was trained using the same predictors, averaging
 ### Interpretation:
 The Random Forest model validated the Decision Tree’s findings but with more stability and less risk of overfitting. Although the **overall accuracy remained the same**, the Random Forest provided richer insights through **variable importance rankings**.  
 
-![Figure 3 — Random Forest](rf-DB3.png)
+![Figure 3 — Random Forest](R3.png)
 
 ---
 
